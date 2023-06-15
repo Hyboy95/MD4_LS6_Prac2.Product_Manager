@@ -5,4 +5,5 @@ export const productRoutes = Router();
 
 productRoutes.get('/create', ProductController.getCreatepage);
 productRoutes.post('/create', ProductController.addNewProduct);
-productRoutes.get('/list',ProductController.getListProduct);
+productRoutes.get('/',ProductController.getListProduct);
+productRoutes.post('/',ProductController.getListProduct);
